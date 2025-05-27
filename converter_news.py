@@ -18,14 +18,14 @@ try:
     SOURCE_DB_CONFIG = {
         "host": "192.168.50.9",
         "port": 3306,  # Адрес хоста исходной базы данных
-        "user": "soe_site",  # Пользователь БД
-        "password": "R7nThBnrppHvyR3w",  # Пароль от БД
+        "user": "***",  # Пользователь БД
+        "password": "***",  # Пароль от БД
         "database": "portal",  # Название базы данных
         "charset": "utf8mb4"  # Кодировка для поддержки спецсимволов
     }
 
     # Настройки подключения к целевой БД serverhost
-    TARGET_DB_URL = "mysql+pymysql://user_portal_test:54(Sh*vPr9@10.109.77.57:3306/portal_test"  # Подключение через SQLAlchemy
+    TARGET_DB_URL = "mysql+pymysql://user_portal_test:***@10.109.77.57:3306/portal_test"  # Подключение через SQLAlchemy
     # Настройки подключения к целевой БД localhost
     # TARGET_DB_URL = "mysql+pymysql://root:root_password@10.109.33.46:3309/test_db"
     Base = declarative_base()
@@ -80,8 +80,8 @@ try:
     target_conn = pymysql.connect(
         host="10.109.77.57",
         port=3306,
-        user="user_portal_test",
-        password="54(Sh*vPr9",
+        user="***",
+        password="***",
         database="portal_test",
         charset="utf8mb4"
     )
